@@ -1,0 +1,3 @@
+# `ghat`
+
+GitHub Actions Test
