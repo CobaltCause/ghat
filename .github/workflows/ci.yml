@@ -44,8 +44,6 @@ jobs:
 
       - name: Configure `nix-direnv`
         run: |
-          mkdir -p "$HOME/.config/nixpkgs"
-          echo "[(self: super: { nix-direnv = super.nix-direnv.override { enableFlakes = true; }; })]" > "$HOME/.config/nixpkgs/overlays.nix"
           echo 'source $HOME/.nix-profile/share/nix-direnv/direnvrc' > "$HOME/.direnvrc"
 
       - name: Install `direnv` and `nix-direnv`
